@@ -15,16 +15,19 @@ class ShortenedLinkController extends RestfulController {
     }
 
     /**
-     * The defult method for this class
-     * Redirects to a page if the link exists
+     * The default method for this class
      *
      * @param l     Id of link
-     * @return      Redirect
      */
     def index (){
         this.displayLink(params.l)
     }
 
+    /**
+     * Redirects to a page of the link exists
+     *
+     * @param id    Id of link
+     */
     def show() {
         this.displayLink(params.id)
     }
