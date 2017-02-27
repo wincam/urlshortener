@@ -10,7 +10,7 @@ class UrlMappings {
         put "/$controller/$id(.$format)?"(action:"update")
         patch "/$controller/$id(.$format)?"(action:"patch")
 
-        "/$id"(controller: 'shortenedLink', action: "show")
+        "/"(controller: 'application', action:'index')
         "500"(view: '/error')
         "404"(view: '/notFound')
     }
