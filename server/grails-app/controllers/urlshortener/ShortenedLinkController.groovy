@@ -43,7 +43,6 @@ class ShortenedLinkController extends RestfulController {
     def save() {
 
         // find if all exists
-        println("hello")
         String dest = params.dest
 
         // dest not given
